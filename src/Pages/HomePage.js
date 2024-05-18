@@ -10,55 +10,23 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { Typography } from "@mui/material";
 
+//local component header
+import Header from '../Components/Header.js'
+import Sidebar from "../Components/Sidebar.js";
+
 const aboutMeText = "Lorum Ipsum";
 
 
 
-const user = {
-    name: 'Jacky Zhang',
-    imageSrc: portrait,
-    imageSize: 90,
-  };
 
-/*
-  
-function Profile(){
-return(
-    <>
-    <h1>{user.name}</h1>
-    <img
-        className="avatar"
-        src={user.imageSrc}
-        alt={'Photo of ' + user.name}
-        style={{
-        width: user.imageSize,
-        height: user.imageSize
-        }}
-        />
-        <AboutSection/>
-    </>  
-);
-}
-
-
-function AboutSection(){
-return(
-    <>
-    <h1>About</h1>
-    <>{Profile}</>
-    <text>{aboutMeText}</text>
-    </>
-);
-}
-*/
 
 const HomePages = (props) => {
     return (
         <div>
+            {<Header/>}
+            {<Sidebar/>}
             
-            <h1 style = {{textAlign: "center"}}>HACKATHON WIP</h1>
-            <br/>
-            <div >
+            <div>
                 <div style={{textAlign: 'center'}}>
                     {/* Endpoint to route to Target component */}
                     <Link to="/">Home</Link> 
@@ -69,34 +37,10 @@ const HomePages = (props) => {
 
                 <React.Fragment>
                     <Box sx={{minWidth: 275}}>
-                        <Card variant="outlined"> 
+                        <Card sx={{textAlign: "center", maxWidth: '80vw', minHeight: '75vh'}} raised="true"> 
                             <CardContent>
-                                <Typography style={{textAlign: 'center'}} sx={{fontSize: 45}} color="text.secondary" gutterBottom> 
-                                    About me
-                                </Typography>
+                                Dashboard
                             </CardContent>
-                        </Card>
-                    </Box>
-                </React.Fragment>
-
-                <React.Fragment>
-                    <Box sx={{maxWidth: '50vw'}}>
-                        <Card variant="outlined"> 
-                            <h2>{user.name}</h2>
-                            <img style= {{marginLeft: 'auto', marginRight: 'auto', display: 'block'}}
-                                className="avatar"
-                                src={user.imageSrc}
-                                alt={'Photo of ' + user.name}
-                                style={{
-                                width: user.imageSize,
-                                height: user.imageSize
-                                }}
-                            />
-                            <br/>
-                            <br/>
-                                <Typography style={{textAlign: 'center'}} sx={{fontSize: 20}} color="text.primary" gutterBottom>
-                                    {aboutMeText} 
-                                </Typography>   
                         </Card>
                     </Box>
                 </React.Fragment>
