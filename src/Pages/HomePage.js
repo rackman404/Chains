@@ -10,7 +10,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { Typography } from "@mui/material";
 
-const aboutMeText = "Hello, my name is Jacky Zhang and I am currently a student enrolled in Toronto Metropolitan University (Formerly Ryerson) for it's Computer Engineering Program. \n Some of my activites include working on Avionics as part of the MetRocketry Design Team and participating in Hackathons.";
+const aboutMeText = "Lorum Ipsum";
 
 
 
