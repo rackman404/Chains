@@ -5,10 +5,10 @@ import {BrowserRouter as Router,
         Navigate,
 } from "react-router-dom";
 
-
 //pages
 import Profile from './Pages/Profile';
 import HomePage from './Pages/HomePage';
+import Conversations from './Pages/Conversations';
 
 export default function MyApp(){
   return (
@@ -17,15 +17,15 @@ export default function MyApp(){
         <Routes>
           <Route
             path = "/" 
-            element={<HomePage />}
+            element={<HomePage/>}
           />
           <Route
             path = "/Profile" 
-            element={<Profile />}
+            element={<Profile/>}
           />
           <Route
-            path = "/" 
-            element={<HomePage />}
+            path = "/Conversations" 
+            element={<Conversations/>}
           />
         </Routes>
       </Router>

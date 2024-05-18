@@ -20,9 +20,8 @@ const HomePages = (props) => {
     return (
         <div>
             {<Header/>}
-            {<Sidebar/>}
-            
             <div>
+                {<Sidebar/>}
                 <React.Fragment>
                     <div style={{ justifyContent: "center", display: "flex" }}>
                         <Card style={{textAlign: "center", minWidth: '80vw', minHeight: '75vh'}} raised="true"> 

@@ -16,7 +16,6 @@ const Header = (props) => {
         <Box sx={{ flexGrow: 1 }}>
           <AppBar position="static">
             <Toolbar>
-                <Button color="inherit"> = </Button> 
               
               <Typography style = {{textAlign: 'center'}} variant="h3" component="div" sx={{ flexGrow: 1 }}>
                 Chains
@@ -32,18 +31,19 @@ const Header = (props) => {
                }}
               color="inherit">Login</Button>
 
-              {/* filler text because of sidebar overlapping, ignore for now*/}
-              <h1>sefdfass </h1>
-   
-
             </Toolbar>
 
             <div style={{textAlign: 'center'}}>
                 {/* Endpoint to route to Target component */}
-                <Link to="/">Home</Link> 
-                <text> </text>
+                <Button color="secondary">
+                  <Link to="/">Home</Link> 
+                </Button>
+                <Button color="secondary">
                 <Link to="/Profile">Profile</Link>
-                <text> </text>
+                </Button>
+                <Button color="secondary">
+                <Link to="/Conversations">Conversations</Link>
+                </Button>
             </div>
 
           </AppBar>

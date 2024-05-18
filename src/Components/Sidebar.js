@@ -9,7 +9,7 @@ import Box from '@mui/material/Box';
 const Sidebar = (props) => {
     return (
       <div style={{marginTop: 80, textAlign: 'center'}}>
-        <Drawer variant="permanent" anchor="right" ModalProps={{keepMounted: true}}>
+        <Drawer variant="permanent" anchor="left" ModalProps={{keepMounted: true}}>
           <h2> Popular <br/> Communities </h2>
 
           {/*would dynamically fill with links to community pages*/}
