@@ -10,8 +10,9 @@ import {BrowserRouter as Router,
 import Profile from './Pages/Profile';
 import HomePage from './Pages/HomePage';
 
-
 export default function MyApp(){
+
+
   return (
     <>
       <Router>
