@@ -16,10 +16,6 @@ import Sidebar from "../Components/Sidebar.js";
 
 const aboutMeText = "Lorum Ipsum";
 
-
-
-
-
 const HomePages = (props) => {
     return (
         <div>
@@ -27,25 +23,15 @@ const HomePages = (props) => {
             {<Sidebar/>}
             
             <div>
-                <div style={{textAlign: 'center'}}>
-                    {/* Endpoint to route to Target component */}
-                    <Link to="/">Home</Link> 
-                    <text> </text>
-                    <Link to="/Profile">Profile</Link>
-                    <text> </text>
-                </div>
-
                 <React.Fragment>
-                    <Box sx={{minWidth: 275}}>
-                        <Card sx={{textAlign: "center", maxWidth: '80vw', minHeight: '75vh'}} raised="true"> 
+                    <div style={{ justifyContent: "center", display: "flex" }}>
+                        <Card style={{textAlign: "center", minWidth: '80vw', minHeight: '75vh'}} raised="true"> 
                             <CardContent>
                                 Dashboard
                             </CardContent>
-                        </Card>
-                    </Box>
+                        </Card>     
+                    </div>
                 </React.Fragment>
-                
-
             </div>
         </div>
     );

@@ -11,8 +11,6 @@ import Profile from './Pages/Profile';
 import HomePage from './Pages/HomePage';
 
 export default function MyApp(){
-
-
   return (
     <>
       <Router>
@@ -32,7 +30,5 @@ export default function MyApp(){
         </Routes>
       </Router>
     </>
-      
-     
   );
 }

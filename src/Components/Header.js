@@ -37,6 +37,15 @@ const Header = (props) => {
    
 
             </Toolbar>
+
+            <div style={{textAlign: 'center'}}>
+                {/* Endpoint to route to Target component */}
+                <Link to="/">Home</Link> 
+                <text> </text>
+                <Link to="/Profile">Profile</Link>
+                <text> </text>
+            </div>
+
           </AppBar>
         </Box>
       );
