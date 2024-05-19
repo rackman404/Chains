@@ -24,9 +24,9 @@ const Conversations = (props) => {
             
             
             
-            <Conversation text = "Near is the worst" avatarImage= "../Static/default_no_person.jpg" user = "Joe Biden" />
-            <Conversation text = "Blockchains are a scam!" avatarImage= "../Static/default_no_person.jpg" user = "Paneer karumacumer" />
-            <Conversation text = "Blockchain Gambling is bad for you!" avatarImage= "../Static/default_no_person.jpg" user = "Sabesttian Polish" />
+            <Conversation text = "Hey its jack, are you still selling that NFT?" avatarImage= "../Static/default_no_person.jpg" user = "JackYogurt" />
+            <Conversation text = "Sick post dude!" avatarImage= "../Static/default_no_person.jpg" user = "Paneer karumacumer" />
+            <Conversation text = "whats up?" avatarImage= "../Static/default_no_person.jpg" user = "Sabesttian Polish" />
         </div>
 
     );
