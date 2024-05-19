@@ -20,7 +20,8 @@ from backend import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("", views.front, name = "front"), 
     path('userlist/', views.user_list),
-    path('userlist/<username>', views.user_details)
-
+    path('userlist/<username>', views.user_details),
+    path('<username>/conversations', views.user_conversations)
 ]
