@@ -35,7 +35,7 @@ const Header = (props) => {
             <Toolbar>
               
               <Typography style = {{textAlign: 'center'}} variant="h3" component="div" sx={{ flexGrow: 1 }}>
-                  PAIN
+                  Chains
               </Typography>
 
               <Avatar alt= "joe biden"  image={"../Static/default_no_person.jpg"}/>
