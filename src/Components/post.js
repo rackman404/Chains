@@ -11,22 +11,28 @@ import Card from '@mui/material/Card';
 import Avatar from '@mui/material/Avatar';
 
 
-const Conversation = (props) => {
+const Post = (props) => {
     return (
-      <Button>
-        <Card raised='true' sx={{width:'80vw'}}>
-            <Avatar alt= "joe biden"  image={props.avatarImage}/>
-            <div style={{ display: 'flex' }}>
-            <Typography style={{textAlign: 'center'}} sx={{fontSize: 25}} color="text.secondary"> 
+      
+          <Card sx={{width:'60vw', marginBottom: '2%', border: 'none'}}>
+            <div>
+              <Avatar alt= "user avatar"  image={props.avatarImage}/>
+              <Typography style={{textAlign: 'left'}} sx={{fontSize: 15}} color="text.secondary"> 
               {props.user}
-            </Typography>
+              </Typography>
+            </div>
+            
+            <div >
+            
             </div>
             <Typography style={{textAlign: 'center'}} sx={{fontSize: 25}} color="text.secondary"> 
               {props.text}
             </Typography>
         </Card>
-      </Button>
+      
+
+      
       );
 };
 
-export default Conversation;
+export default Post;

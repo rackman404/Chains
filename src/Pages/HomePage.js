@@ -13,7 +13,7 @@ import { Typography } from "@mui/material";
 //local component header
 import Header from '../Components/Header.js'
 import Sidebar from "../Components/Sidebar.js";
-import dashboard from "../Components/dashboard.js"
+import Dashboard from "../Components/Dashboard.js"
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 
 const aboutMeText = "Lorum Ipsum";
@@ -22,17 +22,16 @@ const aboutMeText = "Lorum Ipsum";
 const HomePages = (props) => {
     return (
         <div>
-            <div>
-                <Header/>
-
-            </div>
+            <Header/>
+            
             <Grid container spacing={3}>
+
             <Grid xs = {2}>
                 <Sidebar/>
             </Grid>
 
             <Grid xs={10}>
-                <p>more text</p>
+                <Dashboard/>
             </Grid>
 
             </Grid>
