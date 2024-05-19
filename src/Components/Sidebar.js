@@ -4,24 +4,23 @@ import {Link} from "react-router-dom";
 import Drawer from '@mui/material/Drawer';
 import Box from '@mui/material/Box';
 
-
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import { Typography } from "@mui/material";
 
 const Sidebar = (props) => {
     return (
-      <div style={{marginTop: 80, textAlign: 'center'}}>
-        <Drawer variant="permanent" anchor="left" ModalProps={{keepMounted: true}}>
-          <h2> Popular <br/> Communities </h2>
+      <div style={{lmargin: '10', textAlign: 'center'}}>
+        <Box height = '100%' sx= {{border : 1, height : "100vh", minWidth: 200}} >
+          <h2>Popular<br/> Communities</h2>
+        {/*would dynamically fill with links to community pages*/}
 
-          {/*would dynamically fill with links to community pages*/}
-
-          <a href= {"google.com"}> Link </a> 
-          <a href= {"google.com"}> Link </a> 
-          <a href= {"google.com"}> Link </a> 
-          <a href= {"google.com"}> Link </a> 
-          <a href= {"google.com"}> Link </a> 
-          
-
-        </Drawer>
+        <a href= {"google.com"}> Link </a> <br/>
+        <a href= {"google.com"}> Link </a> <br/>
+        <a href= {"google.com"}> Link </a> <br/>
+        <a href= {"google.com"}> Link </a> <br/>
+        <a href= {"google.com"}> Link </a> <br/>
+        </Box>
       </div>
     );
 };
