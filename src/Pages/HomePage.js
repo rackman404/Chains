@@ -13,25 +13,28 @@ import { Typography } from "@mui/material";
 //local component header
 import Header from '../Components/Header.js'
 import Sidebar from "../Components/Sidebar.js";
+import dashboard from "../Components/dashboard.js"
+import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 
 const aboutMeText = "Lorum Ipsum";
+
 
 const HomePages = (props) => {
     return (
         <div>
-            {<Header/>}
             <div>
-                {<Sidebar/>}
-                <React.Fragment>
-                    <div style={{ justifyContent: "center", display: "flex" }}>
-                        <Card style={{textAlign: "center", minWidth: '80vw', minHeight: '75vh'}} raised="true"> 
-                            <CardContent>
-                                Dashboard
-                            </CardContent>
-                        </Card>     
-                    </div>
-                </React.Fragment>
+                <Header/>
             </div>
+            <Grid container spacing={3}>
+            <Grid xs = {2}>
+                <Sidebar/>
+            </Grid>
+
+            <Grid xs={10}>
+                <p>more text</p>
+            </Grid>
+
+            </Grid>
         </div>
     );
 };

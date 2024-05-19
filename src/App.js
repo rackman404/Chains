@@ -5,7 +5,7 @@ import {BrowserRouter as Router,
         Navigate,
 } from "react-router-dom";
 
-//pages
+//import pages 
 import Profile from './Pages/Profile';
 import HomePage from './Pages/HomePage';
 import Conversations from './Pages/Conversations';
