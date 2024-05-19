@@ -24,6 +24,7 @@ const HomePages = (props) => {
         <div>
             <div>
                 <Header/>
+
             </div>
             <Grid container spacing={3}>
             <Grid xs = {2}>
