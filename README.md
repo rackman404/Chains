@@ -1,8 +1,12 @@
-# Placeholder-Milk-Buds-HawkHawks
-HawkHawks 2024 submission
+# HawkHawks 2024 Chains
+HawkHawks 2024, Team Milk Buds Submission.
 
+Description: This web app incorporates the use of Blockchain technologies to create a social app with marketplace capabilities
+to promote and encourage the use of Blockchain technologies, specifically NEAR.
 
-after building the react app, must install custom libraries 
+to use and test locally, react must be installed in the root directly via npm install react
 
-npm install @mui/material @emotion/react @emotion/styled
-npm install @fontsource/roboto
+Custom libraries used are shown below:
+
+npm install @mui/material @emotion/react @emotion/styled @fontsource/roboto
+
