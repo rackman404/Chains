@@ -10,9 +10,12 @@ import Profile from './Pages/Profile';
 import HomePage from './Pages/HomePage';
 import Conversations from './Pages/Conversations';
 
+
 export default function MyApp(){
+  
   return (
     <>
+      <Router></Router>
       <Router>
         <Routes>
           <Route

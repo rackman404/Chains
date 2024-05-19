@@ -9,26 +9,40 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import Card from '@mui/material/Card';
 import Avatar from '@mui/material/Avatar';
+import { useEffect, useState } from 'react'
+import { Wallet } from "../services/near-wallet";
+import { utils } from 'near-api-js';
 
+const CONTRACT_NAME = "guestbook.near-examples.testnet"
+const wallet = new Wallet({ createAccessKeyFor: CONTRACT_NAME })
 
 const Header = (props) => {
+  const [isSignedIn, setIsSignedIn] = useState(false);
+  useEffect(() => {
+    const initFunction = async () => {
+      const isSignedIn = await wallet.startUp();
+      setIsSignedIn(isSignedIn);
+    }
+    initFunction();
+    }, []);
+
+  const signIn = () => { wallet.signIn() }
+
+  const signOut = () => { wallet.signOut() }
     return (
         <Box sx={{ flexGrow: 1 }}>
           <AppBar position="static">
             <Toolbar>
               
               <Typography style = {{textAlign: 'center'}} variant="h3" component="div" sx={{ flexGrow: 1 }}>
-                Chains
+                  PAIN
               </Typography>
 
               <Avatar alt= "joe biden"  image={"../Static/default_no_person.jpg"}/>
 
               <Button 
-              onClick={() => {
-                alert('clicked');
-                //actual NEAR API interaction here
-
-               }}
+                 onClick={signIn}
+               
               color="inherit">Login</Button>
 
             </Toolbar>
